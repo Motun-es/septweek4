@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+    @media  screen and (min-width: 312px){
+
+        
+        
+        *{
+            list-style-type: none;
+        }
+        ul{
+            background-color: deeppink;
+            color: antiquewhite;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        nav li:nth-of-type(even){
+            align-self: center;
+        }
+        
+        section{
+            background-color: deeppink;
+            color: antiquewhite;
+            text-align: center;
+            padding-block: 100px;
+        }
+        }
+        
+        
+        @media screen and (min-width: 540px){ 
+
+            *{
+                list-style-type: none;
+            }
+            
+            ul{
+                background-color: deeppink;
+                color: antiquewhite;
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            
+            nav li:nth-of-type(even){
+                align-self: flex-start;
+            }
+            
+            section{
+            background-color: pink;
+            color: antiquewhite;
+            text-align: center;
+            padding-block: 100px;
+        } 
+        }
+        @media screen and (min-width: 920px){
+            
+            
+            *{
+                list-style-type:none;
+            }
+            
+            ul{
+                background-color: plum;
+                color: antiquewhite;
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            
+            nav li:nth-of-type(even){
+                align-self: flex-start;
+            }
+            
+            section{
+                background-color: deeppink;
+                color: antiquewhite;
+                text-align: center;
+                padding-block: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+            <li>link4</li>
+            <li>link5</li>
+        </ul>
+
+
+    </nav>
+
+    <section>
+        <h2>my account</h2>
+    </section>
+    
+</body>
+</html>
